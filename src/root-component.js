@@ -6,8 +6,10 @@ import { CommonSideEffects } from './common-side-effects-component'
 
 export class RootComponent extends LitElement {
     static get properties() {
-        currentPage: {
-            type: String
+        return {
+            currentPage: {
+                type: String
+            }
         }
     }
 
