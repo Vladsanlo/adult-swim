@@ -13,8 +13,12 @@ export class NavbarComponent extends LitElement{
         this.pages=[
             {
                 url:'common-side-effects',
-                tittle:'Common Side Effects'
+                title:'Common Side Effects'
             },
+            {
+                url:'the-boondocks',
+                title:'The Boondocks'
+            }
 
 
         ]
