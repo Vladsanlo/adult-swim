@@ -2,7 +2,7 @@ import { LitElement, html, css, nothing } from 'lit'
 
 import { NavbarComponent } from './navbar-component'
 
-import { CommonSideEffects } from './common-side-effects-component'
+import {CommonSideEffectsComponent}from './common-side-effects-component'
 
 export class RootComponent extends LitElement {
     static get properties() {
@@ -37,6 +37,9 @@ export class RootComponent extends LitElement {
         switch (this.currentPage) {
             case 'common-side-effects':
                 pageTemplate = html`<common-side-effects-component></common-side-effects-component>`
+                break;
+            case 'the-boondocks':
+                pageTemplate=html`<the-boondocks-component></the-boondocks-component>`
                 break;
         }
 
