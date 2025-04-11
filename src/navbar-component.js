@@ -18,6 +18,10 @@ export class NavbarComponent extends LitElement{
             {
                 url:'the-boondocks',
                 title:'The Boondocks'
+            },
+            {
+                url:'rick-n-morty',
+                title:'Rick y Morty',
             }
 
 
