@@ -86,4 +86,4 @@ export class RickNMortyComponent extends LitElement {
 
 }
 
-window.customElements.define('rick-n-morty',RickNMortyComponent)
+window.customElements.define('rick-n-morty-component',RickNMortyComponent)
