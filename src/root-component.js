@@ -6,6 +6,8 @@ import { CommonSideEffectsComponent } from './common-side-effects-component'
 
 import { TheBoondocksComponent } from './the-boondocks-component'
 
+import { RickNMortyComponent } from './rick-n-morty-component'
+
 export class RootComponent extends LitElement {
     static get properties() {
         return {
@@ -45,6 +47,8 @@ export class RootComponent extends LitElement {
             case 'the-boondocks':
                 pageTemplate = html`<the-boondocks-component></the-boondocks-component>`
                 break;
+            case'rick-n-morty':
+            pageTemplate=html`<rick-n-morty-component></rick-n-morty-component>`
         }
 
         return html`
