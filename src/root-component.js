@@ -47,8 +47,9 @@ export class RootComponent extends LitElement {
             case 'the-boondocks':
                 pageTemplate = html`<the-boondocks-component></the-boondocks-component>`
                 break;
-            case'rick-n-morty':
-            pageTemplate=html`<rick-n-morty-component></rick-n-morty-component>`
+            case 'rick-n-morty':
+                pageTemplate = html`<rick-n-morty-component></rick-n-morty-component>`
+                break;
         }
 
         return html`
