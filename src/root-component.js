@@ -2,7 +2,9 @@ import { LitElement, html, css, nothing } from 'lit'
 
 import { NavbarComponent } from './navbar-component'
 
-import {CommonSideEffectsComponent}from './common-side-effects-component'
+import { CommonSideEffectsComponent } from './common-side-effects-component'
+
+import { TheBoondocksComponent } from './the-boondocks-component'
 
 export class RootComponent extends LitElement {
     static get properties() {
@@ -29,26 +31,30 @@ export class RootComponent extends LitElement {
     }
 
     handlePageChange(e) {
+        console.log('Handling change')
         this.currentPage = e.detail
     }
 
     render() {
         let pageTemplate = nothing
+        console.log(this.currentPage)
         switch (this.currentPage) {
             case 'common-side-effects':
                 pageTemplate = html`<common-side-effects-component></common-side-effects-component>`
                 break;
             case 'the-boondocks':
-                pageTemplate=html`<the-boondocks-component></the-boondocks-component>`
+                pageTemplate = html`<the-boondocks-component></the-boondocks-component>`
                 break;
         }
 
         return html`
         <div id="root-container">
-            <navbar-component @change-page="${this.handlerPageChange}"></navbar-component>
+            <navbar-component @change-page="${this.handlePageChange}"></navbar-component>
             <h1>Pagina para mostrar caricaturas de adult swim</h1>
 
+            <h1>Antes</h1>
             ${pageTemplate}
+            <h1>Despues</h1>
     </div>
     `
     }
