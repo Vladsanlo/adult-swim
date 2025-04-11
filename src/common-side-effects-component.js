@@ -1,6 +1,6 @@
 import { LitElement, html, css } from "lit";
 
-export class CommonSideEffects extends LitElement {
+export class CommonSideEffectsComponent extends LitElement {
     static get properties() {
         return {
 
@@ -100,4 +100,4 @@ export class CommonSideEffects extends LitElement {
 }
 
 
-window.customElements.define('common-side-effects', CommonSideEffects)
+window.customElements.define('common-side-effects-component', CommonSideEffectsComponent)
